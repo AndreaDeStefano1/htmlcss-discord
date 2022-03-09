@@ -21,6 +21,21 @@ body{
   max-width: 1200px;
 }
 
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+
+}
+
+.float-dx{
+  float: right;
+}
+
+.float-sx{
+  float: left;
+}
+
 .btn{
   padding: 10px;
   border-radius: 30px;
@@ -32,9 +47,11 @@ body{
 .btn:hover{
   color: blue;
 }
+
 .menu ul li a:hover{
   color: blue;
 }
+
 .btn.btn-big{
   padding: 10px 30px;
 }
@@ -118,13 +135,53 @@ header .sign-in{
 
 /* MAIN */
 
+section{
+  padding: 100px 0;
+}
+
 section:nth-child(even){
   background-color: rgb(246, 246, 246);
   margin: 10px 0;
 }
 
+.image{
+  display: inline;
+}
 
+section .text{
+  padding-top: 40px;
+}
 
+section .text h2{
+  font-size: 2.5rem;
+}
+
+section .text p{
+  line-height: 30px;
+  padding-top: 30px;
+  font-size: 1.1rem;
+}
+main :last-child{
+  text-align: center;
+
+}
+section h3{
+  padding: 0 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 120px;
+  color: black;
+  background-image: url(../img/stars.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.get-started button{
+  background-color: rgb(142, 161, 225);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
 /* FOOTER */
 
